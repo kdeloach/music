@@ -1,10 +1,12 @@
 <?php
 
+require_once '/var/www/music.kevinx.net/local_settings.php';
+
 class S3Storage implements IStorage
 {
-    static $awsAccessKey = '';
-    static $awsSecretKey = '';
-    static $awsBucketName = '';
+    static $awsAccessKey = AWS_ACCESS_KEY;
+    static $awsSecretKey = AWS_SECRET_KEY;
+    static $awsBucketName = AWS_BUCKET_NAME;
     
     function getFile($hash, $headers = array())
     {

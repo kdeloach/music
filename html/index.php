@@ -18,8 +18,8 @@ function _my_autoload($className)
 }
 spl_autoload_register('_my_autoload');
 
-$storage = new LocalStorage($storagePath);
-//$storage = new S3Storage();
+//$storage = new LocalStorage($storagePath);
+$storage = new S3Storage();
 
 $uploadHandler = new UploadHandler(array(
     'upload_dir' => $uploadPath,

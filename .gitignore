@@ -1,2 +1,6 @@
+*~
+*.swp
 *.txt
 *.log
+logs/
+local_settings.php
