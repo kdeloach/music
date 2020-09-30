@@ -1,3 +1,5 @@
+music player is based on following details.
+
 This project is a basic web interface for uploading and playing music. The goal was to automatically sort music based on ID3 tags in an intelligent way, and to be able to create playlists based on search terms.
 
 The syntax for search terms uses several operators such as &&, ||, !, and parentheses. Used in combination, a playlist can be formed such as:
